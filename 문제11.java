@@ -18,7 +18,6 @@ public class 문제11 {
                 System.out.println("F");
         }
 
-
         Scanner sc = new Scanner(System.in);
         System.out.println("점수를 입력하세요");
         int score = sc.nextInt();

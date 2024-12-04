@@ -9,6 +9,7 @@ public class 문제10 {
                 System.out.println(j + "*" + i + "=" + (i*j));
             }
         }
+
         Scanner sc = new Scanner(System.in);
         System.out.println("출력할 구구단의 단수를 입력 : ");
         int dan = sc.nextInt();
