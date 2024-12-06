@@ -23,6 +23,12 @@ public class Minji {
             System.out.println("=======================================================");
             Scanner scanner = new Scanner(System.in);
             System.out.println("돈을 넣어주세요.");
+            int angel = scanner.nextInt();
+            if (angel == 1004) {
+                System.out.println("관리자 페이지입니다.");
+                System.out.println("1 : 메뉴변경 2 : 가격변경 3 : 재고추가 4 :메뉴추가 5 : 수익확인 (종료는 - 1)");
+                System.out.println("번호를 입력하세요.");
+            }
             int money = scanner.nextInt();
             System.out.println(money + "원");
             System.out.println("메뉴 입력 :");
@@ -41,7 +47,6 @@ public class Minji {
                 System.out.println("감사합니다! 다음에 또 이용해주세요!!!");
             }
         }
-        int angel =
       }
     }
 
