@@ -1,0 +1,36 @@
+chcp
+
+chcp 65001
+
+mysql -u root -p
+
+create database vending;
+
+create table user(
+u_id varchar(20) primary key,
+nikname varchar(20),
+password varchar(20),
+money int
+);
+
+create table product(
+p_id int primary key auto_increment,
+p_name varchar(15),
+p_price int,
+p_stock int,
+p_status int
+);
+
+create table sales(
+s_id int primary key auto_increment,
+u_id varchar(20),
+p_id int,
+s_price int,
+sale_date date,
+constraint fk_user
+foreign key (u_id)
+references user (u_id),
+constraint fk_product
+foreign key (p_id)
+references product (p_id)
+);
